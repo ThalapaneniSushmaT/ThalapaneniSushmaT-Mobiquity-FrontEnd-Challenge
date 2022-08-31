@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mobiquity-color {
+  color: #00AFEF
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00AFEF;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00AFEF;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+dl {
+    padding: 22px 20px;
+    width: auto;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+dt {
+  display: inline-block;
+  color: #00AFEF;
+}
+
+dd {
+  display: inline;
+  margin-left: 8px !important;
+}
+
+dl dd:after {
+  display: block;
+  content: '';
+  margin-bottom: 10px;
+}
+
+.middle_movie_content{
+  display: block;
+  padding: 15px 10px;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 5px;
+  margin: 25px 0;
+}
