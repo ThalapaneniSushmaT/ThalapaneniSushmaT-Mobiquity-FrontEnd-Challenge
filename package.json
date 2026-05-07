@@ -1,0 +1,44 @@
+{
+  "name": "movie-explorer",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --configuration development-i18n",
+    "start:en": "ng serve --configuration development",
+    "start:nl": "ng serve --configuration nl",
+    "build": "ng build",
+    "build:nl": "ng build --configuration nl",
+    "watch": "ng build --watch --configuration development",
+    "i18n:extract": "ng extract-i18n --output-path src/locale --out-file messages.xlf",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --ci"
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/forms": "^21.2.0",
+    "@angular/localize": "^21.2.11",
+    "@angular/platform-browser": "^21.2.0",
+    "@angular/router": "^21.2.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.9",
+    "@angular/cli": "^21.2.9",
+    "@angular/compiler-cli": "^21.2.0",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "jest-preset-angular": "^16.1.4",
+    "jsdom": "^28.0.0",
+    "prettier": "^3.8.1",
+    "ts-jest": "^29.4.9",
+    "typescript": "~5.9.2",
+    "vitest": "^4.0.8"
+  }
+}

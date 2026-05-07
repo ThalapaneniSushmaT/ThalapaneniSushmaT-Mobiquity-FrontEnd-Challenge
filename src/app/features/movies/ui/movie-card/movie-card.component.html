@@ -1,0 +1,27 @@
+<a
+  class="card"
+  [attr.id]="'movie-' + movie().id"
+  [routerLink]="['/movies', movie().id]"
+  [attr.aria-label]="ariaLabel()"
+  (click)="scrollMemory.rememberOpenedMovie(movie().id)"
+>
+  <div class="poster">
+    @if (posterUrl(); as url) {
+      <img [src]="url" [alt]="movie().title" loading="lazy" />
+    } @else {
+      <div class="poster-fallback" aria-hidden="true"></div>
+    }
+  </div>
+
+  <div class="meta">
+    <h3 class="title">{{ movie().title }}</h3>
+    <p class="sub">
+      <span i18n="@@movies.vote">Rating</span>:
+      <strong>{{ movie().vote_average | number : '1.1-1' }}</strong>
+    </p>
+    <p class="sub">
+      <span i18n="@@movies.releaseDate">Release</span>:
+      <strong>{{ movie().release_date | date : 'mediumDate' }}</strong>
+    </p>
+  </div>
+</a>

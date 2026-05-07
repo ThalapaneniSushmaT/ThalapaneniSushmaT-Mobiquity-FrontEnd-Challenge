@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="nl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="a11y.skipToContent" datatype="html">
+        <source>Skip to content</source>
+        <target>Ga naar inhoud</target>
+      </trans-unit>
+      <trans-unit id="app.brand" datatype="html">
+        <source>Movie Explorer</source>
+        <target>Filmverkenner</target>
+      </trans-unit>
+      <trans-unit id="a11y.goToTop" datatype="html">
+        <source>Go to top</source>
+        <target>Ga naar boven</target>
+      </trans-unit>
+      <trans-unit id="app.footerNote" datatype="html">
+        <source>Data provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</source>
+        <target>Gegevens geleverd door TMDB. Dit product gebruikt de TMDB API, maar is niet goedgekeurd of gecertificeerd door TMDB.</target>
+      </trans-unit>
+      <trans-unit id="movies.title" datatype="html">
+        <source>Popular movies</source>
+        <target>Populaire films</target>
+      </trans-unit>
+      <trans-unit id="movies.subtitle" datatype="html">
+        <source>Browse popular titles from TMDB and narrow down by genre.</source>
+        <target>Bekijk populaire titels van TMDB en filter op genre.</target>
+      </trans-unit>
+      <trans-unit id="errors.generic" datatype="html">
+        <source>Something went wrong. Please try again.</source>
+        <target>Er is iets misgegaan. Probeer het opnieuw.</target>
+      </trans-unit>
+      <trans-unit id="movies.emptyTitle" datatype="html">
+        <source>No movies match your filter</source>
+        <target>Geen films komen overeen met je filter</target>
+      </trans-unit>
+      <trans-unit id="movies.emptyMessage" datatype="html">
+        <source>Try selecting a different genre.</source>
+        <target>Probeer een ander genre te kiezen.</target>
+      </trans-unit>
+      <trans-unit id="movies.loadedMoreSuffix" datatype="html">
+        <source>more movies loaded.</source>
+        <target>meer films geladen.</target>
+      </trans-unit>
+      <trans-unit id="loading.label" datatype="html">
+        <source>Loading…</source>
+        <target>Laden…</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.noOverview" datatype="html">
+        <source>No overview available.</source>
+        <target>Geen samenvatting beschikbaar.</target>
+      </trans-unit>
+      <trans-unit id="route.moviesTitle" datatype="html">
+        <source>Movie Explorer</source>
+        <target>Filmverkenner</target>
+      </trans-unit>
+      <trans-unit id="route.movieDetailTitle" datatype="html">
+        <source>Movie details</source>
+        <target>Filmdetails</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.back" datatype="html">
+        <source>← Back</source>
+        <target>← Terug</target>
+      </trans-unit>
+      <trans-unit id="movies.openDetailsPrefix" datatype="html">
+        <source>Open details for</source>
+        <target>Open details voor</target>
+      </trans-unit>
+      <trans-unit id="movies.genreFilterLabel" datatype="html">
+        <source>Genre</source>
+        <target>Genre</target>
+      </trans-unit>
+      <trans-unit id="movies.genreAll" datatype="html">
+        <source>All</source>
+        <target>Alles</target>
+      </trans-unit>
+      <trans-unit id="movies.vote" datatype="html">
+        <source>Rating</source>
+        <target>Beoordeling</target>
+      </trans-unit>
+      <trans-unit id="movies.releaseDate" datatype="html">
+        <source>Release</source>
+        <target>Uitgave</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.notFoundTitle" datatype="html">
+        <source>Movie not found</source>
+        <target>Film niet gevonden</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.notFoundBody" datatype="html">
+        <source>We couldn’t find a movie with this ID.</source>
+        <target>We konden geen film met dit ID vinden.</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.releaseDate" datatype="html">
+        <source>Release date</source>
+        <target>Releasedatum</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.genres" datatype="html">
+        <source>Genres</source>
+        <target>Genres</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.noGenres" datatype="html">
+        <source>—</source>
+        <target>—</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.genresAria" datatype="html">
+        <source>Genres</source>
+        <target>Genres</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.rating" datatype="html">
+        <source>Rating</source>
+        <target>Beoordeling</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.runtime" datatype="html">
+        <source>Runtime</source>
+        <target>Speelduur</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.minutes" datatype="html">
+        <source>min</source>
+        <target>min</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.unknownRuntime" datatype="html">
+        <source>—</source>
+        <target>—</target>
+      </trans-unit>
+      <trans-unit id="movieDetail.overview" datatype="html">
+        <source>Overview</source>
+        <target>Overzicht</target>
+      </trans-unit>
+      <trans-unit id="movies.loadingMore" datatype="html">
+        <source>Loading more…</source>
+        <target>Meer laden…</target>
+      </trans-unit>
+      <trans-unit id="movies.loadMore" datatype="html">
+        <source>Load more</source>
+        <target>Meer laden</target>
+      </trans-unit>
+      <trans-unit id="errors.network" datatype="html">
+        <source>Network error. Please check your connection and try again.</source>
+        <target>Netwerkfout. Controleer je verbinding en probeer het opnieuw.</target>
+      </trans-unit>
+      <trans-unit id="empty.title" datatype="html">
+        <source>No results</source>
+        <target>Geen resultaten</target>
+      </trans-unit>
+      <trans-unit id="empty.message" datatype="html">
+        <source>Try a different genre.</source>
+        <target>Probeer een ander genre.</target>
+      </trans-unit>
+      <trans-unit id="errors.title" datatype="html">
+        <source>Something went wrong</source>
+        <target>Er is iets misgegaan</target>
+      </trans-unit>
+      <trans-unit id="errors.retry" datatype="html">
+        <source>Retry</source>
+        <target>Opnieuw proberen</target>
+      </trans-unit>
+      <trans-unit id="notFound.title" datatype="html">
+        <source>Page not found</source>
+        <target>Pagina niet gevonden</target>
+      </trans-unit>
+      <trans-unit id="notFound.body" datatype="html">
+        <source>The page you’re looking for doesn’t exist.</source>
+        <target>De pagina die je zoekt bestaat niet.</target>
+      </trans-unit>
+      <trans-unit id="notFound.back" datatype="html">
+        <source>Back to movies</source>
+        <target>Terug naar films</target>
+      </trans-unit>
+      <trans-unit id="route.notFoundTitle" datatype="html">
+        <source>Not found</source>
+        <target>Niet gevonden</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

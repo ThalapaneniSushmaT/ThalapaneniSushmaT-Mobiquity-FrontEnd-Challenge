@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="a11y.skipToContent" datatype="html"><source>Skip to content</source><target>Skip to content</target></trans-unit>
+      <trans-unit id="app.brand" datatype="html"><source>Movie Explorer</source><target>Movie Explorer</target></trans-unit>
+      <trans-unit id="a11y.goToTop" datatype="html"><source>Go to top</source><target>Go to top</target></trans-unit>
+      <trans-unit id="app.footerNote" datatype="html"><source>Data provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</source><target>Data provided by TMDB. This product uses the TMDB API but is not endorsed or certified by TMDB.</target></trans-unit>
+      <trans-unit id="movies.title" datatype="html"><source>Popular movies</source><target>Popular movies</target></trans-unit>
+      <trans-unit id="movies.subtitle" datatype="html"><source>Browse popular titles from TMDB and narrow down by genre.</source><target>Browse popular titles from TMDB and narrow down by genre.</target></trans-unit>
+      <trans-unit id="errors.generic" datatype="html"><source>Something went wrong. Please try again.</source><target>Something went wrong. Please try again.</target></trans-unit>
+      <trans-unit id="movies.emptyTitle" datatype="html"><source>No movies match your filter</source><target>No movies match your filter</target></trans-unit>
+      <trans-unit id="movies.emptyMessage" datatype="html"><source>Try selecting a different genre.</source><target>Try selecting a different genre.</target></trans-unit>
+      <trans-unit id="movies.loadedMoreSuffix" datatype="html"><source>more movies loaded.</source><target>more movies loaded.</target></trans-unit>
+      <trans-unit id="loading.label" datatype="html"><source>Loading…</source><target>Loading…</target></trans-unit>
+      <trans-unit id="movieDetail.noOverview" datatype="html"><source>No overview available.</source><target>No overview available.</target></trans-unit>
+      <trans-unit id="route.moviesTitle" datatype="html"><source>Movie Explorer</source><target>Movie Explorer</target></trans-unit>
+      <trans-unit id="route.movieDetailTitle" datatype="html"><source>Movie details</source><target>Movie details</target></trans-unit>
+      <trans-unit id="movieDetail.back" datatype="html"><source>← Back</source><target>← Back</target></trans-unit>
+      <trans-unit id="movies.openDetailsPrefix" datatype="html"><source>Open details for</source><target>Open details for</target></trans-unit>
+      <trans-unit id="movies.genreFilterLabel" datatype="html"><source>Genre</source><target>Genre</target></trans-unit>
+      <trans-unit id="movies.genreAll" datatype="html"><source>All</source><target>All</target></trans-unit>
+      <trans-unit id="movies.vote" datatype="html"><source>Rating</source><target>Rating</target></trans-unit>
+      <trans-unit id="movies.releaseDate" datatype="html"><source>Release</source><target>Release</target></trans-unit>
+      <trans-unit id="movieDetail.notFoundTitle" datatype="html"><source>Movie not found</source><target>Movie not found</target></trans-unit>
+      <trans-unit id="movieDetail.notFoundBody" datatype="html"><source>We couldn’t find a movie with this ID.</source><target>We couldn’t find a movie with this ID.</target></trans-unit>
+      <trans-unit id="movieDetail.releaseDate" datatype="html"><source>Release date</source><target>Release date</target></trans-unit>
+      <trans-unit id="movieDetail.genres" datatype="html"><source>Genres</source><target>Genres</target></trans-unit>
+      <trans-unit id="movieDetail.noGenres" datatype="html"><source>—</source><target>—</target></trans-unit>
+      <trans-unit id="movieDetail.genresAria" datatype="html"><source>Genres</source><target>Genres</target></trans-unit>
+      <trans-unit id="movieDetail.rating" datatype="html"><source>Rating</source><target>Rating</target></trans-unit>
+      <trans-unit id="movieDetail.runtime" datatype="html"><source>Runtime</source><target>Runtime</target></trans-unit>
+      <trans-unit id="movieDetail.minutes" datatype="html"><source>min</source><target>min</target></trans-unit>
+      <trans-unit id="movieDetail.unknownRuntime" datatype="html"><source>—</source><target>—</target></trans-unit>
+      <trans-unit id="movieDetail.overview" datatype="html"><source>Overview</source><target>Overview</target></trans-unit>
+      <trans-unit id="movies.loadingMore" datatype="html"><source>Loading more…</source><target>Loading more…</target></trans-unit>
+      <trans-unit id="movies.loadMore" datatype="html"><source>Load more</source><target>Load more</target></trans-unit>
+      <trans-unit id="errors.network" datatype="html"><source>Network error. Please check your connection and try again.</source><target>Network error. Please check your connection and try again.</target></trans-unit>
+      <trans-unit id="empty.title" datatype="html"><source>No results</source><target>No results</target></trans-unit>
+      <trans-unit id="empty.message" datatype="html"><source>Try a different genre.</source><target>Try a different genre.</target></trans-unit>
+      <trans-unit id="errors.title" datatype="html"><source>Something went wrong</source><target>Something went wrong</target></trans-unit>
+      <trans-unit id="errors.retry" datatype="html"><source>Retry</source><target>Retry</target></trans-unit>
+      <trans-unit id="notFound.title" datatype="html"><source>Page not found</source><target>Page not found</target></trans-unit>
+      <trans-unit id="notFound.body" datatype="html"><source>The page you’re looking for doesn’t exist.</source><target>The page you’re looking for doesn’t exist.</target></trans-unit>
+      <trans-unit id="notFound.back" datatype="html"><source>Back to movies</source><target>Back to movies</target></trans-unit>
+      <trans-unit id="route.notFoundTitle" datatype="html"><source>Not found</source><target>Not found</target></trans-unit>
+    </body>
+  </file>
+</xliff>

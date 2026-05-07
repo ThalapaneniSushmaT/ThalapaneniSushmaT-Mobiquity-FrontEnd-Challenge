@@ -1,0 +1,71 @@
+<section class="page">
+  <header class="top">
+    <div>
+      <h1 id="page-title" i18n="@@movies.title">Popular movies</h1>
+      <p class="subtitle" i18n="@@movies.subtitle">
+        Browse popular titles from TMDB and narrow down by genre.
+      </p>
+    </div>
+
+    @if (genres().length > 0) {
+      <app-genre-filter
+        class="filter"
+        [genres]="genres()"
+        [selectedGenreId]="store.selectedGenreId()"
+        [disabled]="store.state() === 'loading'"
+        (selectedGenreIdChange)="store.setSelectedGenre($event)"
+      />
+    }
+  </header>
+
+  @switch (store.state()) {
+    @case ('loading') {
+      <div class="center">
+        <app-loading-spinner />
+      </div>
+    }
+    @case ('error') {
+      <app-error-state [message]="store.errorMessage() ?? unknownError()" (retry)="store.retry()" />
+    }
+    @case ('success') {
+      @if (movies().length === 0) {
+        <app-empty-state
+          [title]="emptyTitle()"
+          [message]="emptyMessage()"
+        />
+      } @else {
+        <p class="sr-only" role="status" aria-live="polite" aria-atomic="true">
+          {{ loadedMoreAnnouncement() }}
+        </p>
+
+        <div class="grid" role="list">
+          @for (m of movies(); track m.id) {
+            <app-movie-card role="listitem" [movie]="m" />
+          }
+        </div>
+
+        @if (store.hasMore()) {
+          <div class="load-more">
+            <button
+              type="button"
+              class="btn-load-more"
+              [disabled]="store.loadingMore()"
+              (click)="store.loadMore()"
+            >
+              @if (store.loadingMore()) {
+                <span i18n="@@movies.loadingMore">Loading more…</span>
+              } @else {
+                <span i18n="@@movies.loadMore">Load more</span>
+              }
+            </button>
+          </div>
+        }
+      }
+    }
+    @default {
+      <div class="center">
+        <app-loading-spinner />
+      </div>
+    }
+  }
+</section>

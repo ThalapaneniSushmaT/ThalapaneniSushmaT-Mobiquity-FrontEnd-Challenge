@@ -1,0 +1,24 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.select {
+  appearance: none;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface-2) 90%, transparent);
+  color: inherit;
+}
+
+.select:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}

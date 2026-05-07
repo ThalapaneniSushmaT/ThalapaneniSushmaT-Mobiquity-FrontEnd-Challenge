@@ -1,0 +1,80 @@
+<section class="page" aria-labelledby="page-title">
+  <a class="back" routerLink="/movies" i18n="@@movieDetail.back">← Back</a>
+
+  @let res = resolved();
+
+  @switch (res.kind) {
+    @case ('notFound') {
+      <section class="card" role="status" aria-live="polite">
+        <h1 id="page-title" i18n="@@movieDetail.notFoundTitle">Movie not found</h1>
+        <p i18n="@@movieDetail.notFoundBody">We couldn’t find a movie with this ID.</p>
+      </section>
+    }
+    @case ('error') {
+      <app-error-state [message]="res.message" />
+    }
+    @case ('success') {
+      <article class="detail">
+        <div class="poster">
+          @if (posterUrl(); as url) {
+            <img [ngSrc]="url" width="500" height="750" [alt]="res.movie.title" priority />
+          } @else {
+            <div class="poster-fallback" aria-hidden="true"></div>
+          }
+        </div>
+
+        <div class="content">
+          <h1 id="page-title">{{ res.movie.title }}</h1>
+          @if (res.movie.tagline) {
+            <p class="tagline">“{{ res.movie.tagline }}”</p>
+          }
+
+          <dl class="facts">
+            <div>
+              <dt i18n="@@movieDetail.releaseDate">Release date</dt>
+              <dd>{{ res.movie.release_date | date : 'mediumDate' }}</dd>
+            </div>
+
+            <div>
+              <dt i18n="@@movieDetail.genres">Genres</dt>
+              <dd>
+                @if (res.movie.genres.length === 0) {
+                  <span class="muted" i18n="@@movieDetail.noGenres">—</span>
+                } @else {
+                  <ul class="chips" aria-label="Genres" i18n-aria-label="@@movieDetail.genresAria">
+                    @for (g of res.movie.genres; track g.id) {
+                      <li class="chip">{{ g.name }}</li>
+                    }
+                  </ul>
+                }
+              </dd>
+            </div>
+
+            <div>
+              <dt i18n="@@movieDetail.rating">Rating</dt>
+              <dd>{{ res.movie.vote_average | number : '1.1-1' }}</dd>
+            </div>
+
+            <div>
+              <dt i18n="@@movieDetail.runtime">Runtime</dt>
+              <dd>
+                @if (res.movie.runtime; as runtime) {
+                  <span>{{ runtime }}</span> <span class="muted" i18n="@@movieDetail.minutes">min</span>
+                } @else {
+                  <span class="muted" i18n="@@movieDetail.unknownRuntime">—</span>
+                }
+              </dd>
+            </div>
+          </dl>
+
+          <section class="overview" aria-labelledby="overview-title">
+            <h2 id="overview-title" i18n="@@movieDetail.overview">Overview</h2>
+            <p class="muted">
+              {{ res.movie.overview || overviewFallback() }}
+            </p>
+          </section>
+        </div>
+      </article>
+    }
+  }
+</section>

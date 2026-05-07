@@ -1,0 +1,16 @@
+<div class="wrap">
+  <label class="label" for="genre" i18n="@@movies.genreFilterLabel">Genre</label>
+  <select
+    id="genre"
+    name="movieGenreFilter"
+    class="select"
+    [disabled]="disabled()"
+    [ngModel]="selectModel()"
+    (ngModelChange)="onModelChange($event)"
+  >
+    <option value="" i18n="@@movies.genreAll">All</option>
+    @for (g of genres(); track g.id) {
+      <option [value]="'' + g.id">{{ g.name }}</option>
+    }
+  </select>
+</div>
